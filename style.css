@@ -631,10 +631,24 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
-.service-card:hover .service-icon {
-  background: var(--accent-gradient);
-  color: #030712;
-  transform: scale(1.05);
+.service-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: var(--accent-cyan);
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.highlight-service-card {
+  border-color: rgba(56, 189, 248, 0.35);
+  background: linear-gradient(135deg, rgba(14, 19, 29, 0.9) 0%, rgba(20, 27, 42, 0.9) 100%);
+  box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15);
 }
 
 .service-card h3 {
